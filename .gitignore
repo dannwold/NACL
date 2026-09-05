@@ -1,0 +1,4 @@
+build_*/
+*.so
+quickjs/
+patch_*
