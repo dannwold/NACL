@@ -48,9 +48,9 @@ target_link_libraries(shm_daemon ${log-lib})
 
 # Define Universal Event Loop Interface
 add_library(quickjs_eventfd_bridge SHARED src/quickjs_eventfd_bridge_binding.c src/quickjs_eventfd_bridge.c)
-target_link_libraries(quickjs_eventfd_bridge ${log-lib})
-target_link_libraries(quickjs_eventfd_bridge quickjs_lib)
-target_link_libraries(quickjs_eventfd_bridge quickjs_lib)
+target_link_libraries(quickjs_eventfd_bridge ${log-lib} quickjs_lib)
+
+
 
 
 # Define Vulkan Rendering Layer
